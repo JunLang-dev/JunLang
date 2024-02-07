@@ -30,7 +30,7 @@ void update() {
     string result = execute("curl -s https://junlang.imjcj.eu.org/VERSION");
     result = result.substr(44);
     // compare version number with _VERSION_
-    if (result != _VERSION_ + '\n') {
+    if (result != _VERSION_) {
         cout << "Warning: Please update: \"https://junlang.imjcj.eu.org\"" << endl;
     }
     return;
